@@ -1,0 +1,129 @@
+:root {
+  /* CSS HEX */
+  --pumpkin: #ff6d00ff;
+  --heat-wave: #ff7900ff;
+  --dark-orange: #ff8500ff;
+  --yellow-orange-color-wheel: #ff9100ff;
+  --orange-peel: #ff9e00ff;
+  --russian-violet: #240046ff;
+  --persian-indigo: #3c096cff;
+  --purple: #5a189aff;
+  --french-violet: #7b2cbfff;
+  --dark-orchid: #9d4eddff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+  background-color: var(--persian-indigo);
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  background-color: var(--russian-violet);
+  padding: 4rem;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10rem 0;
+  font-size: 2rem;
+}
+
+.start-container p {
+  margin-bottom: 6rem;
+}
+
+.btn {
+  background-color: var(--orange-peel);
+  border-radius: 0.4rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1.6rem 3rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--dark-orange);
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.timer {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.letters-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.letter-item {
+  margin: 1rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.8rem;
+  background-color: var(--orange-peel);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter-item:active {
+  position: relative;
+  top: 1px;
+}
+
+.letter-item:hover {
+  background-color: var(--dark-orange);
+  cursor: pointer;
+}
+
+.words-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+}
